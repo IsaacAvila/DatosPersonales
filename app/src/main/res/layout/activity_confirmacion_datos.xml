@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    tools:context="com.example.hobo.datospersonales.ConfirmacionDatos">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_confirmar"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/titulo_text_size"/>
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/info_margin_top"
+        android:text="@string/nombre"
+        android:textSize="@dimen/info_text_size"
+        android:layout_below="@+id/tvTitulo"/>
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fecha"
+        android:layout_marginTop="@dimen/items_margin_top"
+        android:textSize="@dimen/info_text_size"
+        android:layout_below="@+id/tvNombre"/>
+
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/telefono"
+        android:layout_marginTop="@dimen/items_margin_top"
+        android:textSize="@dimen/info_text_size"
+        android:layout_below="@+id/tvFecha"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:layout_marginTop="@dimen/items_margin_top"
+        android:textSize="@dimen/info_text_size"
+        android:layout_below="@+id/tvTelefono"/>
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/items_margin_top"
+        android:textSize="@dimen/info_text_size"
+        android:text="@string/desc"
+        android:layout_below="@+id/tvEmail"/>
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/editar_boton"
+        android:layout_marginTop="@dimen/info_margin_top"
+        android:paddingLeft="@dimen/padding_button"
+        android:paddingStart="@dimen/padding_button"
+        android:paddingRight="@dimen/padding_button"
+        android:paddingEnd="@dimen/padding_button"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/MyButtonRaised"
+        android:layout_below="@+id/tvDesc"/>
+
+</RelativeLayout>
