@@ -30,7 +30,7 @@ public class ConfirmacionDatos extends AppCompatActivity {
         final int mes = extras.getInt("Mes");
         final int ano = extras.getInt("Ano");
         final String nombre   = extras.getString("Nombre");
-        final String fecha    = String.valueOf(dia) + " - " + String.valueOf(mes) + " - " + String.valueOf(ano);
+        final String fecha    = dia + " - " + mes + " - " + ano;
         final String telefono = extras.getString("Telefono");
         final String email    = extras.getString("Email");
         final String desc     = extras.getString("Desc");
